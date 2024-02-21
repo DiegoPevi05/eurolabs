@@ -4,7 +4,6 @@ import clsx from "clsx";
 import {useState} from "react";
 import { ArrowRightIcon, ChevronRightCircle, ChevronLeftCircle} from "lucide-react";
 import { motion } from "framer-motion";
-import {data} from "./three/data";
 
 interface PropsBusinessCard {
 	title:string;

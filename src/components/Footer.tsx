@@ -33,7 +33,7 @@ const FooterSection: FC = () => {
               <h4 className={`${styles.footerLinkHeader}`}>{item.title}</h4>
               {item.routes.map((route, index_route) => {
                 return(
-                  <ul className="list-none space-y-4 pt-6">
+                  <ul key={"link-types-ul"+index_item+"_"+index_route} className="list-none space-y-4 pt-6">
                       <li key={"link-types-"+index_item+"_"+index_route}>
                         <a  className={`${styles.footerLinkBody} hover:underline`}>{route.title}</a>
                       </li>
