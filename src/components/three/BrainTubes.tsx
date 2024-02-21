@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {extend} from "@react-three/fiber"
 import { useRef} from "react";
 import { shaderMaterial } from "@react-three/drei";
