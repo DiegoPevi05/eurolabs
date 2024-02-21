@@ -169,6 +169,9 @@ function BrainParticles({allcurves}:any){
 }
 
 const BrainComponent = () => {
+
+	const controls = useRef();
+
 	return(
 		<Canvas camera={{position:[0,0,0.25]}}>
 			<color attach="background" args={["#020617"]} />
@@ -176,7 +179,7 @@ const BrainComponent = () => {
 			<pointLight position={[10,10,10]} />
 			<Tubes allcurves={AdnCurves} />
 			<BrainParticles allcurves={AdnCurves}/>
-			<OrbitControls/>
+			<OrbitControls ref={controls} enableZoom={false}/>
 		</Canvas>
 	)
 }

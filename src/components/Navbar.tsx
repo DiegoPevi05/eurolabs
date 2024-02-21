@@ -2,6 +2,7 @@
 import { NavbarData } from "@/lib/constants"
 import {useEffect, useState} from "react"
 import {motion} from "framer-motion"
+import {  animateScroll as scroll } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -28,10 +29,16 @@ const Navbar = () => {
     }
   }
 
+	const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
 
 	return(
 		<div className={`fixed top-0 w-screen h-auto flex flex-col items-center justify-center py-6 ${ openOption != null || scrollNav ? "bg-white":"bg-transparent"} z-30`}>
-			<img className="h-10 w-auto" src="./logos/logo-sm-2.png"/>
+			<span onClick={()=>scrollToTop()} className="cursor-pointer">
+				<img  className="h-10 w-auto" src="./logos/logo-sm-2.png"/>
+			</span>
 			<ul className={`${ openOption != null || scrollNav ? "bg-white text-slate-700":"bg-transparent text-white"} relative w-full h-[100px] flex flex-row justify-center gap-x-12 `}>
 				{NavbarData.map((item,index)=>{
 					return(
