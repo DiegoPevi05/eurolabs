@@ -82,8 +82,8 @@ const Business = () => {
 
 	return(
 		<div id="Business" className="w-full py-16 flex flex-col justify-center items-center h-screen">
-			<h1 className="text-3xl ">AREAS DE NEGOCIO</h1>
-			<p className="text-lg mb-12">En eurolabs ofrecemos un alcance integrado, incluyendo desarrollo, manufactura y comercializacion de medicinas. </p>
+			<h1 className="text-xl font-bold mb-4">AREAS DE NEGOCIO</h1>
+			<p className="text-lg mb-6">En eurolabs ofrecemos un alcance integrado, incluyendo desarrollo, manufactura y comercializacion de medicinas. </p>
 			<div className="w-full h-full overflow-hidden">
 				<div id="container_business" 
 					className={clsx("w-screen h-auto flex flex-row transition-all duration-1200 ease-in-out",selected == 0 ? "translate-x-[360px]": selected == 1 ? "translate-x-[120px] " : "-translate-x-[120px]")}>

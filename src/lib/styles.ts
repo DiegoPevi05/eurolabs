@@ -12,6 +12,9 @@ const styles = {
     "font-heading text-primary font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
   sectionSubText:
     "font-heading text-tertiary sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+
+  footerLinkHeader: "font-body font-medium sm:text-[14px] uppercase",
+  footerLinkBody: "font-body hover:text-red-500 sm:text-[14px] cursor-pointer",
 };
 
 export { styles };
