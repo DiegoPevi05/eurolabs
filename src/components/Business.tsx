@@ -50,8 +50,8 @@ const BusinessCard = (props:BusinessCardProps) => {
 	const {selected, title, header, business, labelLink, img} = props;
 
 	return(
-		<div className={`h-[700px]  ${selected  ? "bg-opacity-100 bg-white w-3/5" : "blur w-1/5 cursor-pointer-null"} transition-all duration-300 ease-in-out`}>
-			<div className="relative w-4/5 h-2/3 ">
+		<div className={`h-[700px]  ${selected  ? "bg-opacity-100 bg-white w-full sm:w-3/5" : "blur w-[0px] sm:w-1/5 cursor-pointer-null"} transition-all duration-300 ease-in-out`}>
+			<div className="relative w-full sm:w-4/5 h-2/3 ">
 				<motion.img 
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -81,11 +81,12 @@ const Business = () => {
 
 	return(
 		<div id="Business" className="w-full py-16 flex flex-col justify-center items-center h-screen">
-			<h1 className="text-xl font-bold mb-4">AREAS DE NEGOCIO</h1>
-			<p className="text-lg mb-6">En eurolabs ofrecemos un alcance integrado, incluyendo desarrollo, manufactura y comercializacion de medicinas. </p>
+			<h1 className="text-md sm:text-xl font-bold mb-4">AREAS DE NEGOCIO</h1>
+			<p className="text-sm sm:text-lg mb-6 text-center">En eurolabs ofrecemos un alcance integrado, incluyendo desarrollo, manufactura y comercializacion de medicinas. </p>
 			<div className="w-full h-full overflow-hidden">
 				<div id="container_business" 
-					className={clsx("w-screen h-auto flex flex-row transition-all duration-1200 ease-in-out",selected == 0 ? "translate-x-[360px]": selected == 1 ? "translate-x-[120px] " : "-translate-x-[120px]")}>
+					className={clsx("min-h-screen sm:w-screen h-auto flex flex-row transition-all duration-1200 ease-in-out",
+													selected == 0 ? "translate-x-[20px] sm:translate-x-[360px]": selected == 1 ? "translate-x-[20px] sm:translate-x-[120px] " : "translate-x-[20px] sm:-translate-x-[120px]")}>
 					{dataPropsBusiness.map((business,index)=>{
 						return(
 							<BusinessCard key={"business_"+index} index={index} selected={selected === index} {...business}/>

@@ -10,8 +10,8 @@ import {  Link as Linkscroll } from 'react-scroll';
 const Hero = () => {
 
 	return(
-		<div className="relative top-0 h-screen w-full bg-slate-700 flex flex-col justify-center items-end">
-			<div className="absolute right-12 bottom-48 flex flex-col justify-center items-center gap-y-4 px-16 z-20">
+		<div className="relative top-0 h-screen w-full bg-slate-700 flex flex-col justify-center items-end overflow-hidden">
+			<div className="absolute bottom-36 right-4 sm:right-12 sm:bottom-48 flex flex-col justify-center items-center gap-y-4 sm:px-16 z-20">
 				<motion.h3 
 					initial={{ translateY:20, opacity:0 }}
 					animate={{ translateY:0, opacity:1  }}
@@ -21,14 +21,14 @@ const Hero = () => {
 					initial={{ translateY:20, opacity:0 }}
 					animate={{ translateY:0, opacity:1  }}
         	transition={{ delay: 1.6, duration: 0.3, ease: "easeIn" }}
-					className="font-bold text-2xl text-white">Comprometidos con innovacion medica</motion.h1>
+					className="font-bold text-md sm:text-2xl text-white">Comprometidos con innovacion medica</motion.h1>
 				<motion.h3 
 					initial={{ translateY:20, opacity:0 }}
 					animate={{ translateY:0, opacity:1  }}
         	transition={{ delay: 2.6, duration: 0.3, ease: "easeIn" }}
 					className="flex flex-row gap-x-3 hover:gap-x-4 text-red-300 hover:text-red-500 transition-all duration-300 cursor-pointer ">Grupo Eurolabs <ArrowRightIcon/></motion.h3>
 			</div>
-			<Linkscroll to="Business" smooth={true} duration={500}>
+			<Linkscroll to="AboutUs" smooth={true} duration={500}>
 				<motion.span
 					initial={{ translateY: 0, opacity:0 }}
 					animate={{ translateY: [0, 10, 0], opacity:[1,1,1] }} // Change translateY to y and reverse animation values

@@ -12,7 +12,7 @@ const FooterSection: FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-4 w-full max-w-7xl mx-auto pt-12 sm:py-6 px-4 gap-y-12 sm:gap-y-0">
+    <div className="grid grid-cols-1 sm:grid-cols-4 w-full max-w-7xl mx-auto pt-12 sm:py-6 px-4 gap-y-12 sm:gap-y-0">
       <div className="col-span-1 flex flex-col justify-start items-start md:flex-col gap-2">
         <a
           onClick={scrollToTop}
@@ -21,12 +21,12 @@ const FooterSection: FC = () => {
           <img
             src={"./logos/logo-sm-2.png"}
             alt="logo"
-            className="h-auto w-16 lg:w-24 block transition-all ease-in-out duration-1000"
+            className="h-auto w-24 block transition-all ease-in-out duration-1000"
           />
         </a>
         <p>{"© " + new Date().getFullYear() + " digitalprocessit"}</p>
       </div>
-      <div className="col-span-3 grid grid-cols-3 gap-6">
+      <div className="col-span-1 sm:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-6">
         {NavbarData.map((item,index_item)=>{
           return(
             <div key={"Section"+index_item}>
@@ -43,7 +43,7 @@ const FooterSection: FC = () => {
             </div>
         )})}
       </div>
-      <div className="col-span-4 row-span-1 flex flex-row justify-between py-12">
+      <div className="col-span-1 sm:col-span-4 row-span-1 flex flex-col sm:flex-row justify-between py-12">
         <span></span>
         <span></span>
         <div className="flex flex-row gap-x-4 ">
