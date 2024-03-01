@@ -16,7 +16,7 @@ interface PropsBusinessCard {
 
 const dataPropsBusiness:PropsBusinessCard[] = [
 	{
-		title:"Desde el desarrollo hasta la manufactura. Tu compa;ero que se preocupa",
+		title:"Nos preocupa el desarrollo de productos",
 		header:"Negocio",
 		business:"CDMO",
 		labelLink:"Explora",
@@ -24,7 +24,7 @@ const dataPropsBusiness:PropsBusinessCard[] = [
 		img:"./images/carousel_1.jpg"
 	},
 	{
-		title:"Desde el desarrollo hasta la manufactura. Tu compa;ero que se preocupa",
+		title:"Los estandares de calidad mas altos para tu negocio",
 		header:"Negocio",
 		business:"CDMO",
 		labelLink:"Explora",
@@ -32,7 +32,7 @@ const dataPropsBusiness:PropsBusinessCard[] = [
 		img:"./images/carousel_2.jpg"
 	},
 	{
-		title:"Desde el desarrollo hasta la manufactura. Tu compa;ero que se preocupa",
+		title:"Tu empresa va a poder desarrolarse en el corto plazo",
 		header:"Negocio",
 		business:"CDMO",
 		labelLink:"Explora",
